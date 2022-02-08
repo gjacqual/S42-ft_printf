@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_type_define.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gjacqual <gjacqual@student.21-school.ru>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/08 22:18:03 by gjacqual          #+#    #+#             */
+/*   Updated: 2022/02/08 22:18:20 by gjacqual         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "includes/ft_printf.h"
 
-int	ft_type_define(va_list ap, int	count, const char *inpt, int i)
+int	ft_type_define(va_list ap, int count, const char *inpt, int i)
 {
 	if (inpt[i] == '%')
 		count += write(1, &inpt[i], 1);

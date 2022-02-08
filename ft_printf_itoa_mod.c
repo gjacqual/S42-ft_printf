@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf_itoa_mod.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gjacqual <gjacqual@student.21-school.ru>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/08 22:16:01 by gjacqual          #+#    #+#             */
+/*   Updated: 2022/02/08 22:19:24 by gjacqual         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "includes/ft_printf.h"
 
 static char	*ft_strbuild_un(unsigned int n, char	*numstr, size_t	sizestr)
@@ -30,7 +42,7 @@ static	int	ft_size_intstr_long(long n)
 	i = sign;
 	while (n != 0)
 	{
-		n /=10;
+		n /= 10;
 		i++;
 	}
 	return (i);
@@ -58,7 +70,7 @@ static	int	ft_size_intstr_xx(unsigned int n)
 	i = 0;
 	while (n != 0)
 	{
-		n /=16;
+		n /= 16;
 		i++;
 	}
 	return (i);
@@ -83,7 +95,7 @@ char	*ft_xx_itoa(unsigned int n, char *str)
 		{
 			numstr[sizestr - 1] = str[n % 16];
 			sizestr--;
-			n /=16;
+			n /= 16;
 		}
 		return (numstr);
 	}

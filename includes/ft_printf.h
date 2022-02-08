@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gjacqual <gjacqual@student.21-school.ru    +#+  +:+       +#+        */
+/*   By: gjacqual <gjacqual@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/17 16:59:25 by gjacqual          #+#    #+#             */
-/*   Updated: 2021/07/19 19:03:28 by gjacqual         ###   ########.fr       */
+/*   Updated: 2022/02/08 22:15:41 by gjacqual         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int		ft_print_un_int(va_list ap);
 int		ft_print_iord_int(va_list ap);
 int		ft_print_string(va_list ap);
 int		ft_print_char(va_list ap);
-int		ft_type_define(va_list ap, int	count, const char *inpt, int i);
+int		ft_type_define(va_list ap, int count, const char *inpt, int i);
 void	ft_putstr_fd(char *s, int fd);
 char	*ft_un_itoa(unsigned int n);
 char	*ft_xx_itoa(unsigned int n, char *str);

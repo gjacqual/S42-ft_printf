@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gjacqual <gjacqual@student.21-school.ru>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/08 22:16:59 by gjacqual          #+#    #+#             */
+/*   Updated: 2022/02/08 22:17:05 by gjacqual         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "includes/ft_printf.h"
 
 int	ft_printf(const	char *inpt, ...)
@@ -20,7 +32,7 @@ int	ft_printf(const	char *inpt, ...)
 			i++;
 			count = ft_type_define(ap, count, inpt, i);
 		}
-		 i++;
+		i++;
 	}
 	va_end(ap);
 	return (count);
