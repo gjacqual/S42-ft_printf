@@ -2,7 +2,7 @@
 NAME	= libftprintf.a
 
 # Compilation Parameters
-CC	:= clang
+CC	:= gcc
 
 
 
