@@ -1,4 +1,10 @@
+# Program conf
 NAME	= libftprintf.a
+
+# Compilation Parameters
+CC	:= clang
+
+
 
 LIBFT	= libft
 
@@ -21,7 +27,7 @@ RM	= rm -f
 ${OBJS_DIR}%.o : %.c ${HEADERS_PATH}ft_printf.h
 	@mkdir -p ${OBJS_DIR}
 	@echo "Compil: $<"
-	@gcc ${CFLAGS} -c $< -o $@
+	@${CC} ${CFLAGS} -c $< -o $@
 
 LIBFT_OBJS	= ${LIBFT}*.o
 
