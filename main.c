@@ -25,6 +25,7 @@ int main()
         printf("res:%d\n\n", r);
     }
 /* end test */
+
 char cimb = 'R';
 char *str;
 str = "Пример строки";
